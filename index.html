@@ -22,14 +22,13 @@
 <script>
   WebChat.default.init({
     selector: "#webchat",
-    initPayload: "/initgreet",
-    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    initPayload: "/greet",
+    customData: {"language": "en"},
     socketUrl: "http://localhost:5005",
     socketPath: "/socket.io/",
-    title: "ritbot",
-    subtitle: "Rit-Emtech engagement",
+    title: "Title",
+    subtitle: "Subtitle",
     params: {"storage": "session"}
-
   })
 </script>
 
